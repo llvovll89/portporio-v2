@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/portporio-v2/static/css/main.0f48704f.css",
+    "main.js": "/portporio-v2/static/js/main.e9b4c86c.js",
+    "static/media/main1.gif": "/portporio-v2/static/media/main1.ca59aeaf26cca8fd4675.gif",
+    "static/media/bg.jpg": "/portporio-v2/static/media/bg.f65157ede05f3856038a.jpg",
+    "static/media/about-img.png": "/portporio-v2/static/media/about-img.b66edf6ff4c0a48bbb46.png",
+    "static/media/kimgeon.pdf": "/portporio-v2/static/media/kimgeon.db7828eea8d78db8d336.pdf",
+    "static/media/fire1.png": "/portporio-v2/static/media/fire1.12659eef4a81e88eb0e7.png",
+    "static/media/project1.png": "/portporio-v2/static/media/project1.d002f7616ad81dfdc63a.png",
+    "static/media/project2.png": "/portporio-v2/static/media/project2.5acd6b85747ca2411729.png",
+    "static/media/project4.png": "/portporio-v2/static/media/project4.7526bb0342f0479cac9f.png",
+    "static/media/project6.png": "/portporio-v2/static/media/project6.84965602fafe4c284d32.png",
+    "static/media/project3.png": "/portporio-v2/static/media/project3.e59371268e9479ed31a4.png",
+    "static/media/project5.png": "/portporio-v2/static/media/project5.879f5ed004c1f35a35ec.png",
+    "index.html": "/portporio-v2/index.html",
+    "main.0f48704f.css.map": "/portporio-v2/static/css/main.0f48704f.css.map",
+    "main.e9b4c86c.js.map": "/portporio-v2/static/js/main.e9b4c86c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f48704f.css",
+    "static/js/main.e9b4c86c.js"
+  ]
+}
