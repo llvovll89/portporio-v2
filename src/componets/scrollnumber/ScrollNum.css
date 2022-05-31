@@ -1,0 +1,28 @@
+.scroll-container {
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+}
+
+.numbox {
+    padding: 1rem;
+    letter-spacing: 2px;
+    opacity: .7;
+    color: #ffffff;
+}
+
+/* media query */
+/* @media (max-width: 1024px) {
+
+} */
+
+
+@media (max-width: 614px) {
+    .numbox {
+        padding: .5rem;
+        letter-spacing: 1px;
+        opacity: .7;
+    }
+} 

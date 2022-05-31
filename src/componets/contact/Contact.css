@@ -1,0 +1,126 @@
+#contact {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact .contact-title {
+    font-size: 3rem;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+#contact .contact-sub {
+    font-size: 2rem;
+    color: #000;
+    letter-spacing: 1px;
+    margin-bottom: 3rem;
+}
+
+#contact a {
+    color: salmon;
+    border-bottom: 1px solid rgba(255, 255, 255, .75);
+}
+
+.container.contact-container {
+    width: 58%;
+    display: grid;
+    grid-template-columns: 30% 58%;
+    gap: 12%;
+}
+
+.contact-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact-option {
+    background: #000;
+    color: #ffffff;
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 1px solid #fff;
+    transition: all .5s ease;
+}
+
+.contact-option:hover {
+    background: transparent;
+    border-color: transparent;
+    color: #000;
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.contact-option a {
+    margin-top: .7rem;
+    display: inline-block;
+    font-size: .7rem;
+}
+
+.btn2 {
+    border: none;
+    outline: none;
+    border-radius: 14px;
+    box-shadow: 0 4px 2px rgba(255, 255, 255, .85);
+    background: #000;
+    cursor: pointer;
+    transition: all .5s ease;
+    letter-spacing: 1px;
+}
+
+.btn2:hover {
+    box-shadow: 0 0 1px rgba(0, 0, 0, .25);
+    background: #333;
+}
+
+/* Form*/
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    background: #000;
+    border: 2px solid rgba(255, 255, 255, .55);
+    resize: none;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+
+@media (max-width: 1024px) {
+    .container.contact-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 614px) {
+    .container.contact-container {
+        width: var(--container-width-sm);
+    }
+    #contact .contact-title {
+        font-size: 2.2rem;
+        margin-bottom: 0;
+        letter-spacing: 1px;
+    }
+    
+    #contact .contact-sub {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        margin-bottom: 3rem;
+    }
+}

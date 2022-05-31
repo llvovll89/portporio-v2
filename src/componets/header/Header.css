@@ -1,0 +1,155 @@
+header {
+    height: 100vh;
+    padding-top: 6rem;
+    z-index: 1;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+header::after {
+    position: absolute;
+    content: '';
+    background-image: url(../../assets//img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .9;
+}
+
+header .title {
+    text-shadow: 0 3px 1px rgba(255, 255, 255, 0.25);
+    text-align: left;
+}
+
+header h1 {
+    font-size: 4rem;
+    letter-spacing: 2px;
+    text-shadow: 0 4px 1px rgba(255,255,255,.25);
+}
+
+header h5 {
+    letter-spacing: 1.5px;
+    font-size: 2.5rem;
+}
+
+header .text-light {
+    font-size: 1.5rem;
+}
+
+.header-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    height: 100%;
+}
+
+/* contactbtn */
+
+.contact-btn {
+    margin-top: 2.6rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    /* position: absolute;
+    right: 0;
+    top: 0; */
+}
+
+/* Social */
+
+.header-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .75rem;
+    position: absolute;
+    right: 0;
+    bottom: 3rem;
+    /* box-shadow: var(--mainWhite); */
+}
+
+.header-social::after {
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--color-light);
+}
+
+/* info */
+
+.info {
+    background: rgba(0, 0, 0, 0.35);
+    width: 22rem;
+    height: 14rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 4rem;
+    border-radius: 40rem 20rem 20rem 40rem;
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.info::after {
+    content:"✨";
+    font-size: 3rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.info img {
+    border-radius: 20rem;
+}
+
+/* scroll */
+
+.scroll-down {
+    position: absolute;
+    left: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: .9rem;
+}
+
+/* media query */
+@media (max-width: 1024px) {
+    /* header {
+        height: 68vh;
+    } */
+    header h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 614px) {
+    header {
+        height: 90vh;
+    }
+    header h1 {
+        font-size: 2.2rem;
+    }
+    header h5 {
+        margin-top: 10px;
+        font-size: 2rem;
+    }
+    header .text-light {
+        font-size: 1rem;
+    }
+    .header-social, .scroll-down {
+        display: none;
+    }
+    .contact-btn {
+        margin-top: 2.6rem;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        position: relative;
+    }
+}

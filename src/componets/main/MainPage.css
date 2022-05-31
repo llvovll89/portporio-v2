@@ -1,0 +1,207 @@
+.mainpage {
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dragon {
+    position: absolute;
+    width: 45px;
+    height: 50%;
+    bottom: 0;
+    background: rgb(184, 55, 55);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    opacity: 0;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, .55);
+    animation: roketOn 3s linear infinite;
+}
+
+.dragon::after {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 25px;
+    background: wheat;
+    border-radius: 1rem 1rem 2rem 2rem;
+    right: -8px;
+    bottom: -25px;
+}
+
+.dragon::before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 60px;
+    background: url(../../assets/img/fire1.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: rotate(180deg);
+    right: -28px;
+    bottom: -86px;
+}
+
+.desc {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    height: 70px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .55);
+    transition: all 1s 1s ease-in-out;
+}
+
+.desc#desc1 {
+    left: 15%;
+    animation:  moveTitle 4s linear infinite;
+}
+
+.desc#desc2 {
+    right: 10%;
+    animation:  moveTitle 4s linear infinite;
+}
+
+.desc#desc3 {
+    left: 5%;
+    animation:  moveTitle2 4s 1s linear infinite;
+}
+
+.desc#desc4 {
+    right: 20%;
+    animation:  moveTitle 4s 2s linear infinite;
+}
+
+.footer-wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+}
+
+.wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background:  url(../../assets/img/wave.png);
+    background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+    z-index: 1000;
+    opacity: .8;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+
+.wave#wave2 {
+    z-index: 999;
+    opacity: .5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+}
+
+.wave#wave3 {
+    z-index: 1000;
+    opacity: .2;
+    bottom: 15px;
+    animation: animateWave_02 4s linear infinite;
+}
+
+.wave#wave4 {
+    z-index: 999;
+    opacity: .7;
+    bottom: 20px;
+    animation: animateWave_02 4s linear infinite;
+}
+
+@keyframes animateWave {
+    0% {
+        background-position-x: 1000px;
+    }
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave_02 {
+    0% {
+        background-position-x: 0px;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes moveTitle {
+    0% {
+        bottom: 0;
+    }
+    20% {
+        bottom: 20%;
+        opacity: 0.9;
+    }
+    40% {
+        bottom: 40%;
+        opacity: 0.7;
+    }
+    60% {
+        bottom: 60%;
+        opacity: 0.5;
+    }
+    80% {
+        bottom: 80%;
+        opacity: 0.3;
+    }
+    100% {
+        bottom: 100%;
+        opacity: 0.1;
+    }
+}
+
+@keyframes moveTitle2 {
+    0% {
+        top: 0;
+        opacity: 0;
+    }
+    20% {
+        top: 20%;
+        opacity: 0.2;
+    }
+    40% {
+        top: 40%;
+        opacity: 0.4;
+    }
+    60% {
+        top: 60%;
+        opacity: 0.6;
+    }
+    80% {
+        top: 80%;
+        opacity: 0.8;
+    }
+    100% {
+        top: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes roketOn {
+    from {
+        bottom: 0%;
+    }
+    to {
+        opacity: .8;
+        bottom: 100%;
+    }
+}
